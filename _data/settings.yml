@@ -1,35 +1,42 @@
 #-------------------------------
 # General Site Settings
 
-title: Chris Hadley | My personal website 
+title: Naomi Krauzig
 
 # Here you can add link in main menu
 menu:
-- {name: Work, url: 'work', icon: 'ion ion-ios-briefcase'}
+- {name: Research, url: 'work', icon: 'ion ion-ios-briefcase'}
+- {name: Publications, url: 'work', icon: 'ion ion-ios-briefcase'}
+- {name: Outreach, url: 'work', icon: 'ion ion-ios-briefcase'}
+- {name: Interests, url: 'work', icon: 'ion ion-ios-briefcase'}
 - {name: Blog, url: 'blog', icon: 'ion ion-ios-paper'}
+- {name: CV, url: 'blog', icon: 'ion ion-ios-paper'}
 - {name: Contact, url: 'contact', icon: 'ion ion-ios-mail'}
 
 #-------------------------------
 # About Section
 
 avatar: 05.jpg
-name: Chris Hadley
-my-job: Designer & Illustrator
-description: I’m a product designer, illustrator & side-project enthusiast. I’m currently build great products at Pixel Media.
-email: chris@website.com
+name: Naomi Krauzig
+my-job: Physical Oceanographer
+description: unraveling the depths of ocean data
+email: naomi.krauzig@uniparthenope.it
 
 #-------------------------------
 # Skills Section
 
 skills-title: Professional Skills
 skills:
-- {name: Communication, value: '90'}
-- {name: Learning, value: '95'} 
-- {name: Planning, value: '60'}
-- {name: Visual Design, value: '80'}
-- {name: UX Design, value: '85'}
-- {name: Programming, value: '70'}
-
+- {name: Data processing, value: '90'}
+- {name: Field work, value: '85'} 
+- {name: Collaboration, value: '80'}
+- {name: Administration, value: '40'}
+- {name: Visual Design, value: '60'}
+- {name: Communication, value: '70'}
+- {name: Programming, value: '90'}
+- {name: Web Design, value: '55'}
+- {name: Teaching, value: '35'}
+- {name: Outreach, value: '80'}
 #-------------------------------
 # Experience Section
 
@@ -110,17 +117,17 @@ projects:
 # Social Settings
 
 social:
-- {link: "https://facebook.com", icon: ion-logo-facebook }
-- {link: "https://twitter.com", icon: ion-logo-twitter }
-- {link: "https://dribbble.com", icon: ion-logo-dribbble }
-- {link: "https://linkedin.com", icon: ion-logo-linkedin }
-- {link: "https://github.com", icon: ion-logo-github }
+- {link: "https://www.facebook.com/naomi.krauzig/", icon: ion-logo-facebook }
+- {link: "https://twitter.com/NKrauzig", icon: ion-logo-twitter }
+- {link: "https://www.linkedin.com/in/naomi-krauzig-1a78b0133/", icon: ion-logo-linkedin }
+- {link: "https://github.com/naomikrauzig", icon: ion-logo-github }
+- {link: "https://discord.com/users/1063529119104639057", icon: io-logo-discord }
 
 # social network icons available (https://ionicons.com/): 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' /
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: nkrauzig # Add your shortname for Disqus Comment. For example mr-brown
 
 
 #-------------------------------
