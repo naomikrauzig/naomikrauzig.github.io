@@ -119,9 +119,10 @@ projects:
 social:
 - {link: "https://www.facebook.com/naomi.krauzig/", icon: ion-logo-facebook }
 - {link: "https://twitter.com/NKrauzig", icon: ion-logo-twitter }
+- {link: "https://orcid.org/0000-0002-9846-4318", icon: ion-icon-information-circle }
 - {link: "https://www.linkedin.com/in/naomi-krauzig-1a78b0133/", icon: ion-logo-linkedin }
+- {link: "https://discord.com/users/1063529119104639057", icon: ion-logo-discord }
 - {link: "https://github.com/naomikrauzig", icon: ion-logo-github }
-- {link: "https://discord.com/users/1063529119104639057", icon: io-logo-discord }
 
 # social network icons available (https://ionicons.com/): 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' /
 
