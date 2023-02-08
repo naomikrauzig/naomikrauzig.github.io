@@ -7,6 +7,7 @@ title: Naomi Krauzig
 menu:
 - {name: Research, url: 'work', icon: 'ion ion-ios-briefcase'}
 - {name: Publications, url: 'work', icon: 'ion ion-ios-briefcase'}
+- {name: Talks, url: 'work', icon: 'ion ion-ios-briefcase'}
 - {name: Outreach, url: 'work', icon: 'ion ion-ios-briefcase'}
 - {name: Interests, url: 'work', icon: 'ion ion-ios-briefcase'}
 - {name: Blog, url: 'blog', icon: 'ion ion-ios-paper'}
@@ -36,53 +37,32 @@ skills:
 - {name: Programming, value: '90'}
 - {name: Web Design, value: '55'}
 - {name: Teaching, value: '35'}
-- {name: Outreach, value: '80'}
+- {name: Outreach, value: '70'}
+- {name: Problem-solving, value: '85'}
+- {name: Adaptability, value: '80'}
 #-------------------------------
 # Experience Section
 
 experience-title: Experience
 experience:
-- {company-name: Industry Design & Media, duration: 2015 - 2018, job-position: Graphic and Web Designer in San Francisco, description: Raclette farm-to-table meditation succulents taiyaki chambray gentrify taxidermy literally biodiesel. Blog knausgaard poutine tacos vaporware chillwave.}
+- {company-name: Polytechnic University of Marche & Fano Marine Center, duration: 2022 - 2024, job-position: Research Associate, description: SSD GEO12 Oceanography and Atmospheric Physics:Thermohaline variability of the Ross Sea}
 
-- {company-name: Graphic Design, duration: 2011 - 2015, job-position: Senior Illustrator in Milan, description: Raclette farm-to-table meditation succulents taiyaki chambray gentrify taxidermy literally biodiesel. Blog knausgaard poutine tacos vaporware chillwave.}
+- {company-name: University Parthenope of Naples, duration: 2021 - 2022, job-position: Research Associate, description: SSD GEO12 Oceanography and Atmospheric Physics:Thermohaline variability of the Ross Sea}
 
-- {company-name: Pixel Media, duration: 2008 - 2011, job-position: Designer in Chicago, description: Raclette farm-to-table meditation succulents taiyaki chambray gentrify taxidermy literally biodiesel. Blog knausgaard poutine tacos vaporware chillwave.}
+- {company-name: University Parthenope of Naples, duration: 2017 - 2021, job-position: Doctoral Researcher, description: Oceanographic variability of the Tyrrhenian Sea}
 
 #-------------------------------
 # Education Section
 
 education-title: Education
 education:
-- {degree: Master Degree, years: 2002 - 2006, organization: University of Creative Minds, description: Raclette farm-to-table meditation succulents taiyaki chambray gentrify taxidermy literally biodiesel. Blog knausgaard poutine tacos vaporware chillwave.}
+- {degree: Ph.D. Candidate, years: 2017 - ongoing, organization: University Parthenope of Naples, description: Dissertation: Oceanographic variability of the Tyrrhenian Sea }
 
-- {degree: Bachelores Degree, years: 1998 - 2002, organization: University of Creative Minds, description: Raclette farm-to-table meditation succulents taiyaki chambray gentrify taxidermy literally biodiesel. Blog knausgaard poutine tacos vaporware chillwave.}
+- {degree: M.Sc., years: 2016 - 2017, organization: University of the Aegean, description: Thesis: Detection of thermal effluent from an aluminium plant in Antikyra Bay}
 
-- {degree: Specialised Coursework, years: 1997 - 1998, organization: University of Boston, description: Raclette farm-to-table meditation succulents taiyaki chambray gentrify taxidermy literally biodiesel. Blog knausgaard poutine tacos vaporware chillwave.}
+- {degree: B.Sc., years: 2012 - 2016, organization: University of the Aegean, description: Thesis: Estimation of vertical mixing in the North Aegean Sea}
 
 #-------------------------------
-# Clients Section
-clients-title: Clienst
-clients:
-- {
-  name: "Dianna Smiley",
-  title: "Social Media, Co and Co",
-  quote: "<p><strong>Working with Chris was the highlight of my career.</strong> Art party before they sold out lo-fi cronut. Narwhal normcore kinfolk crucifix cronut coloring book man braid lomo fixie sartorial helvetica cornhole activated charcoal ethical.</p>"
-}
-- {
-  name: "Loki Bright",
-  title: "Director of Design, New Devi Art",
-  quote: "<p><strong>While we all felt that Chris was a great.</strong> Woke lumbersexual iceland truffaut blog, deep v poke ramps vexillologist heirloom flexitarian taxidermy lomo seitan gastropub. Bespoke vape next level meditation tattooed cred.</p>"
-}
-- {
-  name: "Korbyn Colon",
-  title: "Art Director, LTD Corporate",
-  quote: "<p><strong>Chillwave ethical enamel pin, fashion axe leggings.</strong> Bespoke franzen umami sustainable. Chambray keffiyeh cred sriracha. Hashtag street art humblebrag pok pok viral meggings tacos chambray narwhal gentrify woke etsy.</p>"
-}
-- {
-  name: "Gracelyn Mason",
-  title: "Journalist, The Best Newspaper",
-  quote: "<p><strong>Skateboard iceland distillery succulents dreamcatcher cloud bread ugh keffiyeh unicorn austin.</strong> Palo santo health goth forage four dollar toast. Thundercats ramps irony meggings lo-fi kogi. Activated charcoal pitchfork you probably haven't heard of them squid.</p>"
-}
 
 #-------------------------------
 # Work Section
