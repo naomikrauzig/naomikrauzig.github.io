@@ -154,12 +154,7 @@ a {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(
-      90deg,
-      rgba(7, 13, 14, 0.78),
-      rgba(7, 13, 14, 0.34) 55%,
-      rgba(7, 13, 14, 0.18)
-    ),
+    linear-gradient(90deg, rgba(7, 13, 14, 0.78), rgba(7, 13, 14, 0.34) 55%, rgba(7, 13, 14, 0.18)),
     linear-gradient(0deg, rgba(7, 13, 14, 0.5), transparent 35%);
 }
 
