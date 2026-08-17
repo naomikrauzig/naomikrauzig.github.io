@@ -1,9 +1,12 @@
 # Lighthouse-Badger-Easy | GitHub Action Workflow
 
+
 name: "Lighthouse Badger"
+
 
 permissions:
   contents: write
+
 
 env:
   URLS: https://naomikrauzig.github.io/
@@ -11,9 +14,11 @@ env:
   MOBILE_LIGHTHOUSE_PARAMS: "--only-categories=performance,accessibility,best-practices,seo --throttling.cpuSlowdownMultiplier=2"
   DESKTOP_LIGHTHOUSE_PARAMS: "--only-categories=performance,accessibility,best-practices,seo --preset=desktop --throttling.cpuSlowdownMultiplier=1"
 
+
 on:
   page_build:
   workflow_dispatch:
+
 
 jobs:
   lighthouse-badger-easy:
@@ -34,12 +39,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: ${{ env.BRANCH }}
       - uses: actions/checkout@v4
-        with:
-          repository: "myactionway/lighthouse-badges"
-          path: temp_lighthouse_badges_nested
-      - uses: myactionway/lighthouse-badger-action@v2.2
-        with:
-          urls: ${{ env.URLS }}
-          token: ${{ secrets.GITHUB_TOKEN }}
-          mobile_lighthouse_params: ${{ env.MOBILE_LIGHTHOUSE_PARAMS }}
-          desktop_lighthouse_params: ${{ env.DESKTOP_LIGHTHOUSE_PARAMS }}
