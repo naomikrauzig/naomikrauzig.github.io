@@ -21,7 +21,8 @@
   const lightboxCaption = document.querySelector("[data-lightbox-caption]");
 
   const imageGradient = {
-    "antarctica-southern-ocean": "linear-gradient(135deg, #d7eef3, #577381 55%, #142126)",
+    "antarctica-southern-ocean":
+      "linear-gradient(135deg, #d7eef3, #577381 55%, #142126)",
     europe: "linear-gradient(135deg, #d7e1c7, #697d4c 48%, #1f3023)",
     "science-at-sea": "linear-gradient(135deg, #d8e7e8, #557a83 52%, #22323d)",
     landscapes: "linear-gradient(135deg, #eadfc9, #8a785f 52%, #25221c)",
@@ -46,7 +47,9 @@
     collectionGrid.innerHTML = collections
       .map((collection) => {
         const lead = photos.find((photo) => photo.collection === collection.id);
-        const count = photos.filter((photo) => photo.collection === collection.id).length;
+        const count = photos.filter(
+          (photo) => photo.collection === collection.id,
+        ).length;
         const imageStyle = lead
           ? `style="background-image: ${imageGradient[collection.id]}, url('${lead.src}')"`
           : `style="background-image: ${imageGradient[collection.id]}"`;
@@ -66,15 +69,22 @@
       })
       .join("");
 
-    collectionGrid.querySelectorAll("[data-collection-link]").forEach((link) => {
-      link.addEventListener("click", () => setFilter(link.dataset.collectionLink));
-    });
+    collectionGrid
+      .querySelectorAll("[data-collection-link]")
+      .forEach((link) => {
+        link.addEventListener("click", () =>
+          setFilter(link.dataset.collectionLink),
+        );
+      });
   }
 
   function renderFilters() {
     const buttons = [
       { id: "all", title: "All" },
-      ...collections.map((collection) => ({ id: collection.id, title: shortTitle(collection.title) })),
+      ...collections.map((collection) => ({
+        id: collection.id,
+        title: shortTitle(collection.title),
+      })),
     ];
 
     filterBar.innerHTML = buttons
@@ -83,7 +93,7 @@
           <button type="button" class="filter-button" data-filter="${button.id}" aria-pressed="${button.id === "all"}">
             ${button.title}
           </button>
-        `
+        `,
       )
       .join("");
 
@@ -117,14 +127,19 @@
       .join("");
 
     gallery.querySelectorAll("[data-photo-index]").forEach((button) => {
-      button.addEventListener("click", () => openLightbox(Number(button.dataset.photoIndex)));
+      button.addEventListener("click", () =>
+        openLightbox(Number(button.dataset.photoIndex)),
+      );
     });
   }
 
   function setFilter(collectionId) {
     state.activeCollection = collectionId;
     document.querySelectorAll("[data-filter]").forEach((button) => {
-      button.setAttribute("aria-pressed", String(button.dataset.filter === collectionId));
+      button.setAttribute(
+        "aria-pressed",
+        String(button.dataset.filter === collectionId),
+      );
     });
     renderGallery();
   }
@@ -146,9 +161,15 @@
   }
 
   function bindLightbox() {
-    document.querySelector("[data-lightbox-close]").addEventListener("click", closeLightbox);
-    document.querySelector("[data-lightbox-prev]").addEventListener("click", showPrevious);
-    document.querySelector("[data-lightbox-next]").addEventListener("click", showNext);
+    document
+      .querySelector("[data-lightbox-close]")
+      .addEventListener("click", closeLightbox);
+    document
+      .querySelector("[data-lightbox-prev]")
+      .addEventListener("click", showPrevious);
+    document
+      .querySelector("[data-lightbox-next]")
+      .addEventListener("click", showNext);
     lightbox.addEventListener("click", (event) => {
       if (event.target === lightbox) closeLightbox();
     });
@@ -176,12 +197,14 @@
 
   function showPrevious() {
     state.lightboxIndex =
-      (state.lightboxIndex - 1 + state.visiblePhotos.length) % state.visiblePhotos.length;
+      (state.lightboxIndex - 1 + state.visiblePhotos.length) %
+      state.visiblePhotos.length;
     updateLightbox();
   }
 
   function showNext() {
-    state.lightboxIndex = (state.lightboxIndex + 1) % state.visiblePhotos.length;
+    state.lightboxIndex =
+      (state.lightboxIndex + 1) % state.visiblePhotos.length;
     updateLightbox();
   }
 
@@ -189,8 +212,10 @@
     const photo = state.visiblePhotos[state.lightboxIndex];
     lightboxImage.src = photo.src;
     lightboxImage.alt = photo.alt;
-    lightboxImage.onerror = () => lightbox.classList.add("missing-lightbox-image");
-    lightboxImage.onload = () => lightbox.classList.remove("missing-lightbox-image");
+    lightboxImage.onerror = () =>
+      lightbox.classList.add("missing-lightbox-image");
+    lightboxImage.onload = () =>
+      lightbox.classList.remove("missing-lightbox-image");
     lightboxTitle.textContent = photo.title;
     lightboxMeta.textContent = formatMeta(photo);
     lightboxCaption.textContent = photo.caption;
